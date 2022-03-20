@@ -1,13 +1,30 @@
 <!DOCTYPE html>  
 <html>
 <style>
-input[type=text], input[type=password] { 
+	input[type=text], input[type=password] { 
         width: 96%; 
         padding: 30px 30px; 
         display: inline-block; 
         border: 2px solid #f1f1f1;; 
         box-sizing: border-box; 
     }
+    button {
+  		background-color: #cef5ae; 
+       	width: 100%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: 2px solid green; 
+        cursor: pointer; 
+	}
+	button:hover {
+  		opacity: 0.7;
+	}
+	.container{
+		padding: 25px;
+		background-color: #ffc085;
+		width: 96%;
+	}
 </style>  
 	<head>
 		<meta charset = "UTF-8">   
@@ -17,12 +34,12 @@ input[type=text], input[type=password] {
 	<body>
 		<nav class = "navbar">
     		<a class="navbar__link" href="index.html">Home</a>
-    		<a class="navbar__link" href="search.html">Search</a>
+    		<!-- <a class="navbar__link" href="search.html">Search</a> -->
     		<a class="navbar__link" href="logIn.html">Login</a>
     		<a class="navbar__link" href="signUp.html">Sign Up</a>
     	</nav>
     	 
-		<h1>Welcome</h1>  
+		<!--<h1>Welcome</h1>-->
 		<ul> 
 		<center> 
   			<h1>What's For Dinner?</h1>
@@ -30,7 +47,35 @@ input[type=text], input[type=password] {
   		<center> 
   			<h2 style = "color: orange">Search your restaurants</h2>
   		</center>
-  		<input type="text">
+  		<input type="text" placeholder="Type here to search">
+  		<p>
+		<form method="post" action="/Tests/Post/">          
+        		<div class="container">
+        		<legend>Do you have any dietary restrictions?</legend>      
+        		<input type="checkbox" name="diet_type" value="Vegetarian">Vegetarian<br>      
+        		<input type="checkbox" name="diet_type" value="Vegan">Vegan<br>      
+        		<input type="checkbox" name="diet_type" value="Kosher">Kosher<br>
+        		<input type="checkbox" name="diet_type" value="Halal">Halal<br>
+        		<input type="checkbox" name="diet_type" value="Pescatarian">Pescatarian<br>
+        		<input type="checkbox" name="diet_type" value="Gluten Free">Gluten Free<br>
+        		<input type="checkbox" name="diet_type" value="Lactose Intolerance">Lactose Intolerance<br>
+        		<input type="checkbox" name="diet_type" value="Peanut Free">Peanut Free<br>
+        		<legend>What kind of food are you looking for?</legend>
+        		<input type="checkbox" name="food_type" value="Burger">Burger<br>
+        		<input type="checkbox" name="food_type" value="Pizza">Pizza<br>
+        		<input type="checkbox" name="food_type" value="Seafood">Seafood<br>
+        		<input type="checkbox" name="food_type" value="Steak">Steak<br>
+        		<input type="checkbox" name="food_type" value="Chinese">Chinese<br>
+        		<input type="checkbox" name="food_type" value="Japanese">Japanese<br>
+        		<input type="checkbox" name="food_type" value="Korean">Korean<br>
+        		<input type="checkbox" name="food_type" value="Thai">Thai<br>
+        		<input type="checkbox" name="food_type" value="Indian">Indian<br>
+        		<input type="checkbox" name="food_type" value="Mexican">Mexican<br>
+        		<input type="checkbox" name="food_type" value="Italian">Italian<br>
+        		<br>        		
+        		<button type="submit">Search (but better)</button>
+        		</div>
+		</form>
 		</ul>  
 	</body>  
 </html>  
