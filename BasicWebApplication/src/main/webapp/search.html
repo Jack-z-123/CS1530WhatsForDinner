@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<style>
+    #search-form{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    #search-field{
+        margin-bottom: 10px;
+        border-radius: 2px;
+        padding: 0px 0px 5px 5px;
+    }
+    p{
+        color: white;
+        text-align: center;
+        border: 5px red;
+        background-color: red;
+    }
+</style>
+
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<link rel="stylesheet" href="style.css">
+		<title>Kill Me</title>
+	</head>
+	<body>
+
+		<nav class = "navbar">
+    		<a class="navbar__link" href="index.html">Home</a>
+    		<a class="navbar__link" href="search.html">Search</a>
+    		<a class="navbar__link" href="logIn.html">Login</a>
+    		<a class="navbar__link" href="signUp.html">Sign Up</a>
+    	</nav>
+
+		<form action="" method="POST" enctype="multipart/form-data" id="search-form">
+    		<input type="text" name="search" placeholder="Type here to search" id="search-field">
+    		<button type="submit">Search</button>
+		</form>
+	</body>
+</html>
