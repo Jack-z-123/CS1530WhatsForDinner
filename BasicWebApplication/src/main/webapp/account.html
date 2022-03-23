@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<style>
+	#label{
+        font-size: 125%;
+        margin-left: 10px;
+    }
+    
+    .inline{
+    	display: inline;
+    }
+    
+    #profiles{
+    	margin-left: 20px;
+    }
+</style>
+
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<link rel="stylesheet" href="style.css">
+		<title>Account Information</title>
+	</head>
+	<body>
+		<nav class = "navbar">
+    		<a class="navbar__link" href="index.html">Home</a>
+    		<!-- <a class="navbar__link" href="search.html">Search</a> -->
+    		<a class="navbar__link" href="logIn.html">Login</a>
+    		<a class="navbar__link" href="signUp.html">Sign Up</a>
+    		<a class="navbar__link" href="account.html">Account</a>
+    	</nav>
+
+		<h1>John Smith</h1>
+		<p>
+		<div id="label" class="inline">Username:</div> jsmith_1
+		<br>
+		<div id="label" class="inline">Password:</div> <button id="toggler" onclick="showHide()">Show Password</button> <div id="toggled" class="inline">password123</div>
+		<br><br>
+		<div id="label" class="inline">Saved Search Profiles:</div>
+		<div id="profiles">
+			<h3>Vegan Thai</h3>
+			<ul>
+				<li>2 miles
+				<li>Vegan
+				<li>Gluten Free
+				<li>Thai
+			</ul>
+			<h3>No Peanuts</h3>
+			<ul>
+				<li>5 miles
+				<li>Peanut Free
+				<li>Chinese
+				<li>Indian
+				<li>Mexican
+			</ul>
+		</div>
+		
+		</p>
+		
+
+		<script>
+		function showHide() {
+		  var x = document.getElementById("toggled");
+		  //var y = document.getElementById("toggler");
+		  if (x.style.display === "none") {
+		    x.style.display = "inline";
+		    //y.style.display = "none";
+		  }
+		  else {
+		    x.style.display = "none";
+		    //y.style.display = "inline";
+		  }
+		}
+		</script>
+		
+	</body>
+</html>
