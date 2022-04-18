@@ -25,6 +25,10 @@ public class Restaurant implements java.io.Serializable{
 		menu = new ArrayList<FoodItem>();
 	}
 	
+	public String getName() {
+		return name;
+	}
+	
 	public void addFoodItem(String name, double price) {
 		FoodItem food = new FoodItem(name , price);
 		menu.add(food);

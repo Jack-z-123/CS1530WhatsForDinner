@@ -1,6 +1,6 @@
 
 
-import java.io.IOException;
+import java.io.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -138,5 +138,10 @@ public class Filter extends HttpServlet{
 		
 		//Display the left-over restaurants as search results
 		//Not sure if this would print new HTML to the current page or if a new page would be made to show results
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		for(Restaurant currRestFiltered : foodRestaurants) {
+			out.println("<h1>" + currRestFiltered.getName() + "</h1>");
+		}
 	}
 }
