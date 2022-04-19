@@ -54,18 +54,17 @@ button {
     	<a class="navbar__link" href="account.html">Account</a>
     </nav>
     <center> <h1> Log In </h1> </center> 
-    <form>
+    <form method="post" action="LogIn" id="login">
         <div class="container"> 
             <label>Username : </label> 
-            <input type="text" placeholder="Enter Username" name="username" required>
+            <input type="text" placeholder="Enter Username" name="username" id="username" required>
             <label>Password : </label> 
-            <input type="password" placeholder="Enter Password" name="password" required>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
             <button type="submit">Login</button> 
-            <!-- <input type="checkbox" checked="checked"> Remember me -->
             <button type="button" class="cancelbtn"> <a href="index.html">Cancel</a></button> 
             New to What's For Dinner? <a href="signUp.html"> Sign Up! </a> 
         </div> 
-    </form>   
+    </form>  
 </body>   
 </html>
 
