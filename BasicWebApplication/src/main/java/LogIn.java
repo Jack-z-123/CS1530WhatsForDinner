@@ -50,12 +50,6 @@ public class LogIn extends HttpServlet {
 		String inpPassword = request.getParameter("password");
 		
 		for(Account currAccount : allAccounts) {
-			boolean check = currAccount.trySignIn(inpUsername,inpPassword);
-			System.out.println(check);
-			System.out.println(inpUsername);
-			System.out.println(inpPassword);
-			System.out.println(account1.getUsername());
-			System.out.println(account1.getPassword());
 			if (currAccount.trySignIn(inpUsername,inpPassword))
 	        {
 				pw.println("<style>\r\n"

@@ -8,15 +8,7 @@ public class Restaurant implements java.io.Serializable{
 	ArrayList<String> foodTypes;
 	//foodItemList
 	ArrayList<FoodItem> menu;
-	
-	//location
-	//hours open
-	//phone number
-	//reviewList
-	
-	/*
-	 * the following methods definitely need to be completed for the project
-	*/
+
 	
 	public Restaurant(String n) {
 		name = n;
@@ -109,26 +101,4 @@ public class Restaurant implements java.io.Serializable{
 		//add food types to the restaurant
 		this.foodTypes.add(tag);
 	}
-	
-	/*
-	 *	the following methods probably won't be and don't need to be completed
-	*/
-	
-	public void addReview() {
-		//nope
-	}
-	
-	public void deleteReview() {
-		//again, nope
-	}
-	
-	public void getLocation() {
-		//get the location, I guess
-	}
-	
-	public void setLocation() {
-		//set the location
-	}
-	
-	
 }
