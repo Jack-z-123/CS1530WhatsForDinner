@@ -83,8 +83,6 @@ public class Filter extends HttpServlet {
 		String[] dietType = request.getParameterValues("diet_type");
 		ArrayList<Restaurant> dietRestaurants = new ArrayList<Restaurant>();
 		
-		System.out.println(dietType != null);
-		
 		if(dietType != null) {
 			//Check specified diet type against all restaurants. Throw out non-matches
 			boolean check = false;
@@ -111,11 +109,6 @@ public class Filter extends HttpServlet {
 				dietRestaurants.add(currRest);
 			}
 		}
-		
-		System.out.println("Filtered restaurants with diet type:");
-		for(Restaurant x : dietRestaurants)
-			System.out.println(x.getName());
-		System.out.println("\n");
 		
 		String foodType[] = request.getParameterValues("food_type");
 		ArrayList<Restaurant> foodRestaurants = new ArrayList<Restaurant>();
@@ -145,11 +138,6 @@ public class Filter extends HttpServlet {
 				foodRestaurants.add(currRest);
 			}
 		}
-		
-		System.out.println("Filtered restaurants with food type:");
-		for(Restaurant x : foodRestaurants)
-			System.out.println(x.getName());
-		System.out.println("\n");
 		
 		//Display the left-over restaurants as search results
 		//Not sure if this would print new HTML to the current page or if a new page would be made to show results
